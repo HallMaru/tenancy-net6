@@ -2,7 +2,7 @@
 
 ### *Multi-Tenancy for your ASP.NET Core 6 app.*
 ### Quickstart
-````
+````c#
 using Tenancy;
 
 namespace example
