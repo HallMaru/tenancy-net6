@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tenancy-net6", "tenancy-net6\tenancy-net6.csproj", "{81794D82-0503-48AD-81A9-4D64301EE120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tenancy-net6.sample-01-minimal", "tenancy-net6.sample-01-minimal\tenancy-net6.sample-01-minimal.csproj", "{641BBD41-BE51-4C92-A61B-6B27BC81C384}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81794D82-0503-48AD-81A9-4D64301EE120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81794D82-0503-48AD-81A9-4D64301EE120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81794D82-0503-48AD-81A9-4D64301EE120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81794D82-0503-48AD-81A9-4D64301EE120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{641BBD41-BE51-4C92-A61B-6B27BC81C384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{641BBD41-BE51-4C92-A61B-6B27BC81C384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{641BBD41-BE51-4C92-A61B-6B27BC81C384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{641BBD41-BE51-4C92-A61B-6B27BC81C384}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E55A68D-94B6-44D5-8015-7126D48EFF6C}
+	EndGlobalSection
+EndGlobal
