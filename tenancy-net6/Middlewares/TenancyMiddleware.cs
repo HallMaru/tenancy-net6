@@ -19,16 +19,19 @@ public class TenancyMiddleware
     /// <summary>
     /// Process request.
     /// </summary>
-    /// <param name="context">Current HttpContext.</param>
+    /// <param name="context">Current <see cref="HttpContext"/>.</param>
     /// <param name="tenantResolvers">Registered tenant resolver services.</param>
     public async Task InvokeAsync(HttpContext context, IEnumerable<ITenantResolverService> tenantResolvers)
     {
-        ITenant? tenant = null;
-        foreach (var tenantResolver in tenantResolvers)
+        ITenant? tenant = context.GetTenant();
+        if(tenant == null)
         {
-            tenant = await tenantResolver.Resolve();
-            if (tenant != null) break;
-        }
+            foreach (var tenantResolver in tenantResolvers)
+            {
+                tenant = await tenantResolver.Resolve();
+                if (tenant != null) break;
+            }
+        }        
         context.SetTenant(tenant);
         await _next(context);
     }

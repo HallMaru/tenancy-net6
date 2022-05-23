@@ -8,6 +8,6 @@ public interface ITenantResolverService
     /// <summary>
     /// Resolve the Tenant.
     /// </summary>
-    /// <returns>ITenant instance if resolved or null if cannot be resolved.</returns>
+    /// <returns><see cref="ITenant"/> instance if resolved or null if cannot be resolved.</returns>
     Task<ITenant?> Resolve();
 }

@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>tenancy_net6.sample_01_minimal</RootNamespace>
+    <RootNamespace>Tenancy.sample_01_minimal</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
